@@ -10,7 +10,6 @@ st.set_page_config(page_title="RP AI Accounting", layout="wide")
 
 st.markdown("""
     <div style="background-color:#0d6efd;padding:15px 10px;border-radius:8px;margin-bottom:25px;">
-        <h2 style="color:white;text-align:center;margin:0;">💼 RP AI Accounting Platform</h2>
     </div>
 """, unsafe_allow_html=True)
 
@@ -33,8 +32,6 @@ if not st.session_state.logged_in:
 
 # === Custom Header ===
 st.markdown("""
-    <div style="background-color:navy;padding:10px;border-radius:10px;margin-bottom:20px;">
-        <h2 style="color:white;text-align:center;">RP AI Accounting Module 📊</h2>
     </div>
 """, unsafe_allow_html=True)
 
