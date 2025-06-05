@@ -7,6 +7,13 @@ import plotly.express as px
 
 # === Configuration ===
 st.set_page_config(page_title="RP AI Accounting", layout="wide")
+
+st.markdown("""
+    <div style="background-color:#0d6efd;padding:15px 10px;border-radius:8px;margin-bottom:25px;">
+        <h2 style="color:white;text-align:center;margin:0;">💼 RP AI Accounting Platform</h2>
+    </div>
+""", unsafe_allow_html=True)
+
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 API_BASE = "https://rp-ai-accounting.onrender.com"
 
@@ -33,9 +40,9 @@ st.markdown("""
 
 # === Sidebar Navigation ===
 section = st.sidebar.radio("📂 Navigation", [
-    "🧠 AI Journal Assistant", "📄 Invoices", "💸 Expenses", "📒 Chart of Accounts",
-    "📈 Income Statement", "📋 Trial Balance", "📊 Balance Sheet",
-    "📘 General Ledger", "📘 Manual Journal Entry", "📉 Net Income Trend", "🧠 AI Insight Generator"
+    "🧾 AI Journal Assistant", "🧾 Invoices", "💳 Expenses", "📚 Chart of Accounts",
+    "📊 Income Statement", "🧮 Trial Balance", "🧾 Balance Sheet",
+    "📖 General Ledger", "✍️ Manual Journal Entry", "📈 Net Income Trend", "💡 AI Insight Generator"
 ])
 
 # === Backend Connection ===
