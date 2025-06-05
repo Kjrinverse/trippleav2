@@ -32,7 +32,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # === Sidebar Navigation ===
-section = st.sidebar.radio("📁 Modules", [
+section = st.sidebar.radio("📂 Navigation", [
     "🧠 AI Journal Assistant", "📄 Invoices", "💸 Expenses", "📒 Chart of Accounts",
     "📈 Income Statement", "📋 Trial Balance", "📊 Balance Sheet",
     "📘 General Ledger", "📘 Manual Journal Entry", "📉 Net Income Trend", "🧠 AI Insight Generator"
@@ -80,7 +80,7 @@ with st.sidebar:
     end_date = st.date_input("End Date", max_date)
 
 # === Placeholder for Dynamic Sections ===
-st.markdown(f"### 📂 Currently Viewing: {section}")
+st.markdown(f"<h4 style='color:#0d6efd;margin-top:20px;'>🧭 You are viewing: <strong>{section}</strong></h4>", unsafe_allow_html=True)
 
 st.info("👉 This is a placeholder. Each module's layout and logic can now be refactored one by one for consistency.")
 
